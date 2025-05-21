@@ -45,4 +45,4 @@ A mobile application for SMA Muhammadiyah students to register for extracurricul
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/extracurricular-registration.git
+   git clone https://github.com/dorumon234/Event-Handling-AndroidStudio.git
