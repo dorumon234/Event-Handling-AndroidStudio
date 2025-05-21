@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EkstrakurikulerRegistration</string>
+
+    <string-array name="class_array">
+        <item>Pilih Kelas</item>
+        <item>X IPA 1</item>
+        <item>X IPA 2</item>
+        <item>X IPS 1</item>
+        <item>X IPS 2</item>
+        <item>XI IPA 1</item>
+        <item>XI IPA 2</item>
+        <item>XI IPS 1</item>
+        <item>XI IPS 2</item>
+        <item>XII IPA 1</item>
+        <item>XII IPA 2</item>
+        <item>XII IPS 1</item>
+        <item>XII IPS 2</item>
+    </string-array>
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Name Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan nama lengkap"
+            android:inputType="textPersonName"
+            android:layout_marginTop="4dp"/>
+
+        <!-- NIS Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor Induk Siswa (NIS)"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etNIS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan NIS"
+            android:inputType="number"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Class Spinner -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Kelas"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Date of Birth -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Tanggal"
+            android:layout_marginTop="4dp"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <!-- Gender Radio Group -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki"
+                android:layout_marginEnd="16dp"/>
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"/>
+        </RadioGroup>
+
+        <!-- Extracurricular Checkboxes -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilihan Ekstrakurikuler"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp">
+
+            <CheckBox
+                android:id="@+id/cbFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sepak Bola"
+                android:layout_marginBottom="4dp"/>
+
+            <CheckBox
+                android:id="@+id/cbBasketball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basket"
+                android:layout_marginBottom="4dp"/>
+
+            <CheckBox
+                android:id="@+id/cbMusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Musik"
+                android:layout_marginBottom="4dp"/>
+
+            <CheckBox
+                android:id="@+id/cbDebate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Debat"/>
+        </LinearLayout>
+
+        <!-- Activity Schedule -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Hari dan Jam Kegiatan"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contoh: Senin 09:00-11:00"
+            android:completionThreshold="1"
+            android:inputType="text"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:layout_marginTop="24dp"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+    </LinearLayout>
+</ScrollView>
